@@ -126,8 +126,8 @@ footer{
 
     .content.supervisor{
         grid-column: 1;
-        grid-row: 2;
-        position: relative;
+        grid-row: 2 / 4;
+        align-self: center;
         padding-top: 1.6rem;
         height: 245px;
         top: 142px;
@@ -143,8 +143,8 @@ footer{
 
     .content.calculator{
         grid-column: 3;
-        grid-row: 2;
-        position: relative;
+        grid-row: 2 / 4;
+        align-self: center;
         top: 142px;
         right: 8px;
     }

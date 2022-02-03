@@ -11,9 +11,9 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-h1{
+.title{
     font-weight: 200;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .introduction{
@@ -36,10 +36,6 @@ h1{
     min-height: 220px;
     padding: 1.3rem 1.6rem;
     border: 1px solid white;
-}
-
-.content.first{
-    margin-top: 4.9rem;
 }
 
 .content p{
@@ -89,7 +85,8 @@ footer{
     main{
         display: grid;
         grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr);
-        grid-template-rows: 207px repeat(2, 1fr); 
+        grid-template-rows: auto repeat(2, 1fr);
+        column-gap: 10px;
     }
 
     .introduction{
@@ -98,7 +95,7 @@ footer{
         margin-left: -10px;
     }
 
-    h1, h2{
+    h1{
         font-size: 1.7rem;
         margin: 0 -50px;
     }
@@ -110,10 +107,9 @@ footer{
 
     .content{
         padding: 2rem 2rem 0rem 2rem;
-        width: 95%;
         line-height: 1.6;
         max-height: 250px;
-        justify-self: center;
+        
     }
 
     .content img{
@@ -129,10 +125,6 @@ footer{
         grid-row: 2 / 4;
         align-self: center;
         padding-top: 1.6rem;
-        height: 245px;
-        top: 142px;
-        left: 8px;
-        margin-top: 1.5rem;
     }
 
     .content.karma{
@@ -145,8 +137,6 @@ footer{
         grid-column: 3;
         grid-row: 2 / 4;
         align-self: center;
-        top: 142px;
-        right: 8px;
     }
 
 }
@@ -159,7 +149,8 @@ footer{
 
     main{
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 207px repeat(2, 1fr); 
+        grid-template-rows: auto repeat(2, 1fr); 
+        column-gap: 40px;
         max-height: 810px;
     }
 
@@ -177,21 +168,7 @@ footer{
 
     .content{
         padding: 2rem 2rem 0rem 2rem;
-        width: 77%;
     }
 
-    .content.supervisor{
-        left: 70px;
-        top: 142px;
-        height: 245px;
-    }
-
-    .content.karma{
-        margin-top: 40px;
-    }
-
-    .content.calculator{
-        top: 142px;
-        right: 80px;
-    }
+    
 }
